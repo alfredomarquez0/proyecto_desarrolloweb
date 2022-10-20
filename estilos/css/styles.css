@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+}
+
+/* INDEX*/
+
+
+/* clases utilitarias */
+.btn {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: table;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5%;
+    padding: 0.5rem;
+    font-weight: 900;
+    color: #FCA311;
+}
+
+/*header*/
+.header {
+    background-color: #14213D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+
+.header__list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.header__logo {
+    /* position: relative; */
+    /* top: 2rem; */
+    max-width: 16rem;
+    /* margin-left: 8rem; */
+    filter: contrast(0.5);
+}
+.header__anchor{
+    flex: 1;
+    text-decoration: none;
+    color: #FCA311;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease-out;
+    padding: 0.5rem;
+}
+
+li a:hover,
+li a:focus {
+  background-color: #fff;
+  color: #333;
+}
+
+
+
+/* fin del header*/
+
+
+/* hero */
+.hero {
+    background: url(../../img/pexels-artem-podrez-8985465.jpg)center/cover;
+    height: 85vh;
+    /* position: relative; */
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    justify-content: flex-start;
+}
+
+.hero__titulo{
+    color: #FCA311;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.hero__slogan {
+    font-size: 1.5rem;
+    background: rgba(229, 229, 229, 0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.info {
+    background-color: #586F7C;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding: 0.5rem;
+}
+
+.info h2{
+color: #FCA311;
+text-align: center;
+}
+
+
+
+
+/* fin del hero*/
+
+
+/* footer*/
+.footer{
+    background-color: #14213D;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__anchor{
+    color: #FCA311;  
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+.items__footer{
+    height: 100%;
+}
+
+
+.footer__info{
+    font-family:'Montserrat', sans-serif; 
+    color: #E5E5E5;
+}
+
+.redes a{
+    color: #E5E5E5;
+    max-width: 2rem;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    background-color: #14213D;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.copy__nombre{
+    color: #E5E5E5;
+}
+/* fin del footer*/
+
+/* SERVICIOS */
+.section {
+    background-color: #E5E5E5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 350px;
+    padding: 10rem;
+    gap: 2rem;
+    column-gap: 15rem;
+}
+
+.section__servicios {
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-items: center; */
+    
+    border-style: solid;
+}
+
+.section__titulo {
+    /* text-align: center; */
+    font-family: 'Montserrat', sans-serif;
+    color: #14213D;
+    font-size: 20px;
+    /* margin-bottom: 1rem; */
+    border-bottom: solid;
+}
+
+.section__img {
+    /* height: 25vh; */
+    display: flex;
+    /* display: block; */
+    /* padding-left: 7rem; */
+    max-width: 10rem;
+}
+.section__imgencabezado{
+    width: 100%;
+}
+
+.servicio__img{
+    height: 25vh ;
+    background: url(../../img/tires-g4239f20c9_192007.jpg)center;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+.agenda__cita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agenda__btn {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #FCA311;
+    font-weight: 900;
+}
+
+.servicios__list {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    list-style: none;
+    color: black;
+    padding-top: 1rem;
+}
+.servicios__list li:before {
+    content: '✓';
+}
+
+
+
+/* FIN DE SERVICIOS */
+
+/* CONTACTO */
+
+.contacto__main{
+    background-color:#E5E5E5
+}
+
+.contacto {
+    display: inline-block;
+    margin-left: 52rem;
+    margin-top: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.17rem;
+    color: #2F4550;
+    font-weight: bold;
+}
+
+.contacto__imagen {
+    background: url(../../img/contact-us-g7397d8b9e_1920.jpg) no-repeat;
+    height: 40vh;
+    position: relative;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.contacto__estilo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.17rem;
+    color: #2F4550;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20rem;
+    margin-left: 41rem;
+    background-color: white;
+    border-radius: 0.4rem;
+}
+/* FIN DE CONTACTO */
+
+/* QUIENES SOMOS */
+
+
+
+.qs__img {
+    width: 100%;
+    /* height: auto; */
+    /* overflow: hidden; */
+}
+
+
+
+.qs__section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px 180px 250px;
+    grid-template-areas: 
+    "imagen imagen parrafo parrafo"
+    "equipo equipo equipo equipo"
+    "tarjeta1 tarjeta2 tarjeta3 tarjeta4";
+    padding: 8rem;
+    background-color: #E5E5E5;
+    row-gap: 1rem;
+}
+
+.equipo {
+    grid-area: equipo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color:#586F7C;
+}
+.tarjeta1 {
+    grid-area: tarjeta1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5%;
+    border: solid;
+    transition: transform .2s;
+
+}
+.tarjeta1:hover{
+transform: scale(1.09);    
+}
+.tarjeta2{
+    grid-area: tarjeta2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5%;
+    border: solid;
+    transition: transform .2s;
+}
+.tarjeta2:hover{
+    transform: scale(1.09);    
+    }
+.tarjeta3{
+    grid-area: tarjeta3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5%;
+    border: solid;
+    transition: transform .2s;
+}
+.tarjeta3:hover{
+    transform: scale(1.09);    
+    }
+.tarjeta4{
+    grid-area: tarjeta4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5%;
+    border: solid;
+    transition: transform .2s;
+}
+.tarjeta4:hover{
+    transform: scale(1.09);    
+    }
+.tarjeta__img{
+    border-radius: 50%;
+}
+
+
+
+.qs__parrafo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.17rem;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.imagen {
+    grid-area: imagen;
+    /* width: 100%; */
+    /* height: auto; */
+    overflow: hidden;
+    /* align-self: end; */
+    display: grid;
+    place-content: center;
+}
+
+.parrafo {
+    grid-area: parrafo;
+    display: flex;
+}
+
+.tarjeta__nombre{
+    border-bottom: solid;
+    padding-top: 1rem;
+    color: #14213D
+}
+.tarjeta__parrafo{
+    padding-top: 1rem;
+    color: #14213D
+}
+
+
+
+
+/* FIN DE QUIENES SOMOS */
+
+/* GALERIA */
+
+.galeria__body{
+    background-color:#E5E5E5;
+}
+
+.galeria {
+    margin-left: 8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.galeria__imagen{
+    width: 60vh;
+}
+
+.galeria__video {
+    margin-top: 3rem;
+    margin-left: 19rem;
+    margin-bottom: 3rem;
+}
+
+/* FIN DE GALERIA */
+
+
+/*MEDIA QUERIES 768px*/
+
+@media screen and (max-width: 768px) {
+
+    /*INICIO*/
+
+.header{
+    flex-direction: column;
+}
+
+.header__logo{
+    max-width: 14rem;
+}
+.header__list{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.hero__titulo{
+    font-size: 1.5rem;
+}
+.hero__slogan{
+    font-size: 1.3rem;
+}
+.btn{
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+
+.info{
+    padding: 4rem;
+}
+
+.footer__anchor{
+    font-size: 1.1rem;
+}
+
+    /*QUIENES SOMOS*/
+.qs__section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 350px 265px 200px 250px 250px 1px;
+        grid-template-areas: 
+        "imagen imagen"
+        "parrafo parrafo"
+        "equipo equipo"
+        "tarjeta1 tarjeta2"
+        "tarjeta3 tarjeta4";
+        row-gap: 1rem;
+        padding: 0rem;
+    }
+    .equipo{
+        font-size: 1.5rem;
+
+    }
+    .tarjeta1{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    .tarjeta2{
+        margin-left: 6rem;
+        margin-right: 6rem; 
+    }
+    .tarjeta3{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    .tarjeta4{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    /*SERVICIOS*/
+
+    .servicio__img{
+        font-size: 1.5rem;
+    }
+
+    .section {
+        
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        gap: 2rem;
+        column-gap: 2rem;
+    }
+}
+
+/*MEDIA QUERIES 320px*/
+
+@media screen and (max-width: 320px) {
+
+    /*INICIO*/
+
+    .header__logo {
+        max-width: 11rem;
+    }
+
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero {
+        padding: 1rem;
+        height: 65vh;
+    }
+
+    .info {
+        padding: 2rem;
+    }
+
+    .footer{
+        height: 22vh;
+        padding: 1rem;
+        flex-direction: column;
+
+    }
+
+    /*QuIENES SOMOS*/
+
+    .qs__section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 214px 725px 120px 250px 250px 250px 250px 10px;
+        grid-template-areas: 
+                "imagen"
+                "parrafo"
+                "equipo"
+                "tarjeta1"
+                "tarjeta2"
+                "tarjeta3"
+                "tarjeta4";
+                padding: 0rem;
+    }
+    .tarjeta1 {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .tarjeta2 {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .tarjeta3 {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .tarjeta4 {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    /* SERVICIOS*/
+
+    .servicio__img {
+        font-size: 1rem;
+    }
+
+    .servicio__img {
+        background: url(../../img/tires-g4239f20c9_192007.jpg) bottom;
+    }
+    .section {
+        grid-template-columns: 1fr;
+        
+    }
+    .agenda__btn{
+        font-size: 1rem;
+    }
+}
+
