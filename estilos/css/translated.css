@@ -1,0 +1,290 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  font-size: 16px; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.header {
+  background-color: #14213e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap; }
+  .header__list {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-size: 1.2rem; }
+    .header__list li a:hover,
+    .header__list li a:focus {
+      background-color: #fff;
+      color: #333; }
+  .header__logo {
+    max-width: 16rem;
+    filter: contrast(0.5); }
+  .header__anchor {
+    flex: 1;
+    text-decoration: none;
+    color: #fca311;
+    font-weight: 600;
+    transition: all 0.5s ease-out;
+    padding: 0.5rem; }
+
+.footer {
+  background-color: #14213e;
+  height: 18vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .footer__anchor {
+    color: #fca311;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block; }
+  .footer__info {
+    color: #e5e5e5; }
+  .footer__li {
+    list-style: none; }
+
+.redes a {
+  color: #E5E5E5;
+  max-width: 2rem; }
+
+.copy {
+  display: flex;
+  justify-content: center;
+  background-color: #14213e; }
+
+.copy__nombre {
+  color: #e5e5e5; }
+
+.hero {
+  background: url(../../img/pexels-artem-podrez-8985465.jpg) center/cover;
+  height: 85vh;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: flex-start; }
+  .hero__titulo {
+    color: #FCA311;
+    font-size: 2rem; }
+  .hero__slogan {
+    font-size: 1.5rem;
+    background: rgba(229, 229, 229, 0.4); }
+
+.info {
+  background-color: #586F7C;
+  color: white;
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 0.5rem; }
+  .info h2 {
+    color: #FCA311;
+    text-align: center; }
+
+.btn {
+  background-color: white;
+  text-decoration: none;
+  display: table;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 5%;
+  padding: 0.5rem;
+  font-weight: 900;
+  color: #fca311; }
+
+.qs {
+  background-color: #e5e5e5; }
+  .qs__img {
+    width: 100%; }
+  .qs__div {
+    display: flex; }
+  .qs__parrafo {
+    font-size: 1.17rem;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+  .qs__equipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: #586F7C;
+    height: 10rem; }
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  border: solid;
+  transition: transform .2s; }
+  .tarjeta:hover {
+    transform: scale(1.09); }
+  .tarjeta__presentacion {
+    max-width: 60%; }
+  .tarjeta__nombre1 {
+    border-bottom: solid;
+    padding-top: 1rem;
+    color: #14213D;
+    font-size: 1.5rem; }
+  .tarjeta__nombre2 {
+    border-bottom: solid;
+    padding-top: 1rem;
+    color: #14213D;
+    font-size: 1.5rem; }
+  .tarjeta__nombre3 {
+    border-bottom: solid;
+    padding-top: 1rem;
+    color: #14213D;
+    font-size: 1.5rem; }
+  .tarjeta__nombre4 {
+    border-bottom: solid;
+    padding-top: 1rem;
+    color: #14213D;
+    font-size: 1.5rem; }
+  .tarjeta__parrafo {
+    padding-top: 1rem;
+    color: #14213D; }
+
+.servicio__img {
+  height: 25vh;
+  background: url(../../img/tires-g4239f20c9_192007.jpg) center;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black; }
+
+.section {
+  background-color: #e5e5e5; }
+  .section__list {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    list-style: none;
+    color: black;
+    padding-top: 1rem; }
+    .section__list li:before {
+      content: '✓'; }
+
+.card-title {
+  border-bottom: solid black; }
+
+.agenda__cita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
+.agenda__btn {
+  background: white;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #fca311;
+  font-weight: 900; }
+
+.galeria {
+  background-color: #e5e5e5; }
+  .galeria__encabezado {
+    height: 25vh;
+    background: url(../../img/tires-g4239f20c9_192007.jpg) center;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black; }
+  .galeria__img {
+    margin-left: 25%; }
+
+.contacto {
+  background-color: #E5E5E5;
+  height: 100%; }
+  .contacto__mapa {
+    max-width: 100%; }
+
+@media screen and (max-width: 968px) {
+  /*INDEX*/
+  .header {
+    flex-direction: column; }
+    .header__logo {
+      max-width: 14rem; }
+    .header__list {
+      font-size: 1rem;
+      padding: 1rem; }
+  .hero__titulo {
+    font-size: 1.5rem; }
+  .hero__slogan {
+    font-size: 1.3rem; }
+  .btn {
+    font-size: 1.3rem;
+    padding: 0.3rem; }
+  .info {
+    padding: 4rem; }
+  .footer__anchor {
+    font-size: 1.1rem; }
+  /*Quienes Somos*/
+  .qs__equipo {
+    font-size: 1.5rem; }
+  /*Servicios*/
+  .servicio__img {
+    font-size: 1.5rem; }
+  /*Galeria*/
+  .galeria__encabezado {
+    font-size: 1.5rem;
+    height: 20vh; } }
+
+/*MEDIA QUERIES 575px*/
+@media screen and (max-width: 575px) {
+  /*INDEX*/
+  .header {
+    flex-direction: row; }
+    .header__logo {
+      max-width: 11rem; }
+    .header__list {
+      flex-direction: column;
+      align-items: center; }
+  .hero {
+    padding: 1rem;
+    height: 65vh; }
+  .info {
+    padding: 2rem; }
+  .footer {
+    height: 65vh;
+    padding: 1rem;
+    flex-direction: column; }
+    .footer__horarios {
+      font-size: 1rem; }
+  /* SERVICIOS*/
+  .servicio__img {
+    font-size: 1rem; }
+  .servicio__img {
+    background: url(../../img/tires-g4239f20c9_192007.jpg) bottom; }
+  .section {
+    grid-template-columns: 1fr; }
+  .agenda__btn {
+    font-size: 1rem; }
+  /*GALERIA*/
+  .galeria__img {
+    width: 100% !important;
+    margin-left: 0; } }

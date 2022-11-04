@@ -4,39 +4,86 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mecanica integral en Buenos Aires para todo tipo de autos y camionetas, entregamos presupuesto sin cargo ">
+        <meta name="keywords" content="Taller mecanico, tren delantero, embragues, filtros y correas, mecanica pesada, cambio de fluidos, cambio de aceite, llantas y cubiertas, diagnostico computarizado,inyeccion nafta y diesel">
         <title>Galeria</title>
-        <link rel="shortcut icon" href="../img/AMC MOTORSPORT logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/logo-amcmotorsport.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/ab5f4a11cc.js" crossorigin="anonymous"></script>  
-        <link rel="stylesheet" href="../estilos/css/styles.css">
+        <script src="https://kit.fontawesome.com/ab5f4a11cc.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
+        <!--<link rel="stylesheet" href="../estilos/css/styles.css">-->
+        <link rel="stylesheet" href="../estilos/css/translated.css">
     </head>
-<body class="galeria__body">
+<body class="galeria">
     <header class="header">
-        <a href="../index.html"><img class="header__logo" src="../img/AMC MOTORSPORT.png" alt="logo empresa"></a>
-        <nav>
-            <ul class="header__list">
-                <li class="header__item"> <a class="header__anchor" href="../index.html">Inicio</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./quienes_somos.html">Quienes somos</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./servicios.html">Servicios</a></li>
-                <li class="header__item"> <a class="header__anchor" href="#">Galeria</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <a href="../index.html"><img class="header__logo" src="../img/amc-motorsport.png" alt="logo empresa"></a>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="header__list navbar-nav">
+                        <li class="header__item"> <a class="header__anchor" href="../index.html">Inicio</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./quienes_somos.html">Quienes somos</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./servicios.html">Servicios</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="#">Galeria</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <section class="galeria">
-            <img class= "galeria__imagen" src="../img/pexels-artem-podrez-898617702.jpg" alt="imagen taller">
-            <img class= "galeria__imagen" src="../img/pexels-artem-podrez-898560601.jpg" alt="imagen taller">
-            <img class= "galeria__imagen"src="../img/brake-disc-g6b6e60caa_1920055.jpg" alt="imagen taller">
-    </section>
-    <section class="galeria">
-        <img class= "galeria__imagen" src="../img/tim-mossholder-V37iTrYZz2E-unsplash06.jpg" alt="imagen taller">
-        <img class= "galeria__imagen" src="../img/tires-g4239f20c9_192007.jpg" alt="imagen taller">
-    </section>
-    <section class="galeria__video">
-    <video src="../img/video_acerca_del_taller.mp4" controls></video>
-    </section>
+    <h2 class="galeria__encabezado">Conoce todas las soluciones que tenemos para tu auto</h2>
+    <div id="carouselExampleControls" class="carousel slide w-100 container mt-4 mb-4 galeria__carrusel" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="../img/cambio-aceite.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/cambio-cubierta.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/tren-delantero.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/motor-servicio.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/auto-elevado.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/cambio-bateria.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/cambio-escape.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/motor-abierto.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/motor-fuera.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/motor-revisado.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/colocacion-escaner.jpg" class="d-block w-50 galeria__img" alt="...">
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
     <footer class="footer">
         <nav>
             <a class="footer__anchor" href="./contacto.html">Contacto</a>
@@ -44,7 +91,7 @@
         </nav>
         <div class="footer__horarios">
             <h4 class="footer__info">Horarios</h4>
-            <p class="footer__info">Lunes a Viernes: <br> 8:00-17:00</p>
+            <p class="footer__info">Lunes a Viernes: 8:00-17:00</p>
         </div>
         <div class="itemsFooter">
             <h4 class="footer__info">Dirección</h4>
@@ -63,5 +110,7 @@
     <div class="copy">
         <p class="copy__nombre">© Alfredo Marquez - 2022 </p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+.qs{
+    background-color: $color-claro;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__div {
+    display: flex;
+    }
+
+    &__parrafo {
+        font-size: 1.17rem;
+        color: black;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    &__equipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color:#586F7C;
+    height: 10rem;
+    }
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    border: solid;
+    transition: transform .2s;
+
+    &:hover{
+        transform: scale(1.09);    
+    }
+
+    &__presentacion{
+        max-width: 60%;
+    }
+
+    &__nombre1{
+        @include nombre-estilo;
+    }
+
+    &__nombre2{
+        @include nombre-estilo;
+    }
+
+    &__nombre3{
+        @include nombre-estilo;
+    }
+
+    &__nombre4{
+        @include nombre-estilo;
+    }
+
+    &__parrafo{
+        padding-top: 1rem;
+        color: #14213D;
+    }
+}
+
+
+

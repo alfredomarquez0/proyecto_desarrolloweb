@@ -1,0 +1,43 @@
+.header {
+    background-color: $color-azul;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+    &__list {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        font-size: 1.2rem;
+        & li a:hover,
+        li a:focus {
+        background-color: #fff;
+        color: #333;
+        }   
+    }
+
+    &__logo {
+        max-width: 16rem;
+        filter: contrast(0.5);
+    }
+
+    &__anchor{
+        flex: 1;
+        text-decoration: none;
+        color: $color-naranja;
+        font-weight: 600;
+        transition: all 0.5s ease-out;
+        padding: 0.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+

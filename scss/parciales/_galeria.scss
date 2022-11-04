@@ -1,0 +1,20 @@
+.galeria{
+    background-color: $color-claro;
+
+    &__encabezado {
+        height: 25vh ;
+        background: url(../../img/tires-g4239f20c9_192007.jpg)center;
+        opacity: 0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: black;
+    }
+
+    &__img{
+        margin-left: 25%;
+    }
+}

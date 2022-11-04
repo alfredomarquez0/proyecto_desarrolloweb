@@ -4,117 +4,155 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mecanica integral en Buenos Aires para todo tipo de autos y camionetas, entregamos presupuesto sin cargo ">
+        <meta name="keywords" content="Taller mecanico, tren delantero, embragues, filtros y correas, mecanica pesada, cambio de fluidos, cambio de aceite, llantas y cubiertas, diagnostico computarizado,inyeccion nafta y diesel">
         <title>Servicios</title>
-        <link rel="shortcut icon" href="../img/AMC MOTORSPORT logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/logo-amcmotorsport.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ab5f4a11cc.js" crossorigin="anonymous"></script> 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-        <link rel="stylesheet" href="../estilos/css/styles.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+        <!--<link rel="stylesheet" href="../estilos/css/styles.css">-->
+        <link rel="stylesheet" href="../estilos/css/translated.css">
     </head>
 <body>
     <header class="header">
-        <a href="../index.html"><img class="header__logo" src="../img/AMC MOTORSPORT.png" alt="logo empresa"></a>
-        <nav>
-            <ul class="header__list">
-                <li class="header__item"> <a class="header__anchor" href="../index.html">Inicio</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./quienes_somos.html">Quienes somos</a></li>
-                <li class="header__item"> <a class="header__anchor" href="#">Servicios</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./galeria.html">Galeria</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <a href="../index.html"><img class="header__logo" src="../img/amc-motorsport.png" alt="logo empresa"></a>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="header__list navbar-nav">
+                        <li class="header__item"> <a class="header__anchor" href="../index.html">Inicio</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./quienes_somos.html">Quienes somos</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="#">Servicios</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./galeria.html">Galeria</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>                                                   <!--Bloque-->
             <div class="servicio__img">
                 <h2>Servicios Disponibles</h2>
             </div>                                
-        <section class="section">
-            <div class="section__servicios">
-                <img class="section__img" src="../img/mecanica-removebg-preview.png" alt="Mecanica">
-                <h3 class="section__titulo">Mecanica</h3>
-            <ul class="servicios__list">
-                <li>Mecanica del motor</li>
-                <li>Correas y filtros</li>
-                <li>Transmision/embrague</li>
-                <li>Cambios de fluidos</li>
-            </ul>
-            </div>
-            <div class="section__servicios">
-                <img class="section__img" src="../img/tren-delantero-removebg-preview.png" alt="Tren Delantero">
-                <h3 class="section__titulo">Tren delantero</h3>
-                <ul class="servicios__list">
-                    <li>Alineacion y balanceo</li>
-                    <li>Direccion hidraulica y mecanica</li>
-                    <li>Amortiguacion a medida</li>
-                    <li>Neumaticos</li>
+        <section class="section container pt-3 pb-3">
+          <div class="row gy-3 justify-content-around">
+            <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/mecanica-removebg-preview.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Mecánica</h5>
+                  <p class="card-text">Nos ocupamos desde un simple tornillo hasta reparaciones complejas del motor.</p>
+                </div>
+                <ul class="list-group list-group-flush section__list">
+                  <li class="list-group-item">Correas y filtros</li>
+                  <li class="list-group-item">Mecánica del motor</li>
+                  <li class="list-group-item">Transmisión y embrague</li>
                 </ul>
-            </div>
-            <div class="section__servicios">
-                <img class="section__img" src="../img/electronica-removebg-preview.png" alt="Electronica">
-                <h3 class="section__titulo">Electronica</h3>
-                <ul class="servicios__list">
-                    <li>Diagnostico computarizado</li>
-                    <li>Electricidad general</li>
-                    <li>Electronica compleja</li>
-                    <li>Baterias</li>
+              </div>
+
+              <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/tren-delantero-removebg-preview.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Tren Delantero</h5>
+                  <p class="card-text">Hacemos un chequeo completo del tren, revisando desde la base de los amortiguadores hasta los bujes más pequeños.</p>
+                </div>
+                <ul class="list-group list-group-flush section__list">
+                  <li class="list-group-item">Alineación y balanceo</li>
+                  <li class="list-group-item">Dirección hidráulica y mecánica</li>
+                  <li class="list-group-item">Neumáticos</li>
                 </ul>
-            </div>
-            <div class="section__servicios">
-                <img class="section__img" src="../img/accesorios-removebg-preview.png" alt="Accesorios">
-                <h3 class="section__titulo">Accesorios</h3>
-                <ul class="servicios__list">
-                    <li>Sonido en general</li>
-                    <li>Sistema de escape</li>
-                    <li>Polarizado</li>
-                    <li>Tratamiento ceramico</li>
+              </div>
+              
+              <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/electronica-removebg-preview.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Electrónica</h5>
+                  <p class="card-text">Revisamos desde la tensión del alternador hasta cualquier falla mediante un escaneo computarizado.</p>
+                </div>
+                <ul class="list-group list-group-flush section__list">
+                  <li class="list-group-item">Diagnostico computarizado</li>
+                  <li class="list-group-item">Electricidad general</li>
+                  <li class="list-group-item">Electrónica compleja</li>
                 </ul>
-            </div>
-            <div class="section__servicios">
-                <img class="section__img" src="../img/encendido-removebg-preview.png" alt="Encendido">
-                <h3 class="section__titulo">Encendido</h3>
-                <ul class="servicios__list">
-                    <li>Bobina de encendido</li>
-                    <li>Bujias</li>
-                    <li>Servicio del carburador</li>
-                    <li>Llave de encendido</li>
+              </div>
+              
+              <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/accesorios-removebg-preview.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Accesorios</h5>
+                  <p class="card-text">Aquí el cliente es el artista encargado de hacer su sueño realidad indicándonos cual es el accesorio que más necesita su auto.</p>
+                </div>
+                <ul class="list-group list-group-flush section__list">
+                  <li class="list-group-item">Sonido en general</li>
+                  <li class="list-group-item">Sistema de escape</li>
+                  <li class="list-group-item">Tratamiento cerámico</li>
                 </ul>
-            </div>
-            <div class="section__servicios">
-                <img class="section__img" src="../img/inyeccion-removebg-preview.png" alt="Inyeccion">
-                <h3 class="section__titulo">Inyeccion</h3>
-                <ul class="servicios__list">
-                    <li>Inyeccion nafta</li>
-                    <li>Inyeccion diesel</li>
-                    <li>Mantenimiento de inyectores</li>
-                    <li>GNC</li>
+              </div>
+              
+              <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/encendido-removebg-preview.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Encendido</h5>
+                  <p class="card-text">Chequeamos las bujías, revisamos la bobina y diagnosticamos el problema al momento del encendido.</p>
+                </div>
+                <ul class="list-group list-group-flush section__list">
+                  <li class="list-group-item">Bobina de encendido</li>
+                  <li class="list-group-item">Bujías</li>
+                  <li class="list-group-item">Servicio del carburador</li>
                 </ul>
-            </div>
-            <div class="section__servicios">
-                <img class="section__img" src="../img/frenos-removebg-preview.png" alt="Frenos">
-                <h3 class="section__titulo">Frenos</h3>
-                <ul class="servicios__list">
-                    <li>Cambio de pastillas</li>
-                    <li>Discos de freno</li>
-                    <li>Modulo ABS</li>
-                    <li>Bomba de freno</li>
+                <div class="card-body">
+                </div>
+              </div>
+              
+              <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/inyeccion-removebg-preview.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Inyección </h5>
+                  <p class="card-text">Verificamos el estado de los inyectores y demás filtros que hacen un correcto funcionamiento del motor.</p>
+                </div>
+                <ul class="list-group list-group-flush section__list">
+                  <li class="list-group-item">Inyección nafta</li>
+                  <li class="list-group-item">Mantenimiento inyectores</li>
+                  <li class="list-group-item">GNC</li>
                 </ul>
-            </div>
-            <div class="section__servicios">
-                <img class="section__img" src="../img/suspension-removebg-preview.png" alt="Suspension">
-                <h3 class="section__titulo">Suspension</h3>
-                <ul class="servicios__list">
-                    <li>Suspension para 4X4</li>
-                    <li>Suspension neumatica</li>
-                    <li>Coilovers</li>
-                    <li>Bujes</li>
+              </div>
+              
+              <div class="card col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/frenos-removebg-preview.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Frenos</h5>
+                  <p class="card-text">Nos fijamos del desgaste de los discos y estado de las pastillas.</p>
+                </div>
+                <ul class="list-group list-group-flush section__list">
+                  <li class="list-group-item">Discos de freno</li>
+                  <li class="list-group-item">Cambio de pastillas</li>
+                  <li class="list-group-item">Modulo ABS</li>
                 </ul>
-            </div>
+              </div>
+              
+              <div class="card col-xxl-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/suspension-removebg-preview.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Suspensión</h5>
+                  <p class="card-text">Instalamos suspensión para todo tipo de vehículo  ya sea hidráulica  o neumática.</p>
+                </div>
+                <ul class="list-group list-group-flush section__list">
+                  <li class="list-group-item">suspensión para 4X4</li>
+                  <li class="list-group-item">suspensión neumatica</li>
+                  <li class="list-group-item">Coilovers</li>
+                </ul>
+              </div>
             <div class="agenda__cita">
             <a class="agenda__btn" data-aos="fade-up-left" href="../vistas/contacto.html">Agenda una cita</a>
-        </div>
+            </div>
+          </div>
         </section>
         
 
@@ -126,7 +164,7 @@
         </nav>
         <div class="footer__horarios">
             <h4 class="footer__info">Horarios</h4>
-            <p class="footer__info">Lunes a Viernes: <br> 8:00-17:00</p>
+            <p class="footer__info">Lunes a Viernes: 8:00-17:00</p>
         </div>
         <div class="itemsFooter">
             <h4 class="footer__info">Dirección</h4>
@@ -145,6 +183,8 @@
     <div class="copy">
         <p class="copy__nombre">© Alfredo Marquez - 2022 </p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script>
         AOS.init();
     </script>

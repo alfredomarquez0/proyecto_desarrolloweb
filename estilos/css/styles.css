@@ -7,6 +7,10 @@
     font-size: 16px;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* INDEX*/
 
 
@@ -31,6 +35,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 
@@ -119,10 +124,14 @@ text-align: center;
 /* footer*/
 .footer{
     background-color: #14213D;
-    height: 10vh;
+    height: 18vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.footer__li{
+list-style: none;
 }
 
 .footer__anchor{
@@ -131,6 +140,7 @@ text-align: center;
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     display: block;
+    
 }
 
 .items__footer{
@@ -159,17 +169,15 @@ text-align: center;
 .copy__nombre{
     color: #E5E5E5;
 }
+
+
+
 /* fin del footer*/
 
 /* SERVICIOS */
+
 .section {
     background-color: #E5E5E5;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 350px;
-    padding: 6rem;
-    gap: 2rem;
-    column-gap: 15rem;
 }
 
 .section__servicios {
@@ -185,10 +193,7 @@ text-align: center;
 .section__titulo {
     /* text-align: center; */
     font-family: 'Montserrat', sans-serif;
-    color: #14213D;
     font-size: 20px;
-    /* margin-bottom: 1rem; */
-    border-bottom: solid;
 }
 
 .section__img {
@@ -211,7 +216,14 @@ text-align: center;
     align-items: center;
     font-family:'Montserrat', sans-serif;
     font-size: 2rem;
+    font-weight: 700;
+    color: black;
 }
+
+.card-title{
+    border-bottom: solid black;
+}
+
 .agenda__cita{
     display: flex;
     justify-content: center;
@@ -246,21 +258,12 @@ text-align: center;
 
 /* CONTACTO */
 
-.contacto__main{
-    background-color:#E5E5E5
+.contacto{
+    background-color:#E5E5E5;
+    height: 100%; 
 }
 
-.contacto {
-    display: inline-block;
-    margin-left: 52rem;
-    margin-top: 2rem;
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.17rem;
-    color: #2F4550;
-    font-weight: bold;
-}
+
 
 .contacto__imagen {
     background: url(../../img/contact-us-g7397d8b9e_1920.jpg) no-repeat;
@@ -281,35 +284,33 @@ text-align: center;
     background-color: white;
     border-radius: 0.4rem;
 }
+
+.contacto__mapa{
+    max-width: 100%;
+    
+}
 /* FIN DE CONTACTO */
 
 /* QUIENES SOMOS */
 
-
+.qs{
+    background-color: #E5E5E5;
+}
 
 .qs__img {
     width: 100%;
     /* height: auto; */
     /* overflow: hidden; */
+
+}
+
+.tarjeta__presentacion{
+    max-width: 60%;
 }
 
 
-
-.qs__section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 400px 180px 250px;
-    grid-template-areas: 
-    "imagen imagen parrafo parrafo"
-    "equipo equipo equipo equipo"
-    "tarjeta1 tarjeta2 tarjeta3 tarjeta4";
-    padding: 4rem;
-    background-color: #E5E5E5;
-    row-gap: 1rem;
-}
-
-.equipo {
-    grid-area: equipo;
+.qs__equipo {
+    /*grid-area: equipo;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,24 +318,27 @@ text-align: center;
     font-weight: 900;
     font-size: 2rem;
     background-color:#586F7C;
+    height: 10rem;
 }
-.tarjeta1 {
+.tarjeta {
     grid-area: tarjeta1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 5rem;
-    margin-right: 5rem;
     border-radius: 5%;
     border: solid;
     transition: transform .2s;
 
 }
-.tarjeta1:hover{
+.tarjeta:hover{
 transform: scale(1.09);    
 }
+
+
+
+
 .tarjeta2{
     grid-area: tarjeta2;
     display: flex;
@@ -342,8 +346,6 @@ transform: scale(1.09);
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 5rem;
-    margin-right: 5rem;
     border-radius: 5%;
     border: solid;
     transition: transform .2s;
@@ -358,8 +360,6 @@ transform: scale(1.09);
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 5rem;
-    margin-right: 5rem;
     border-radius: 5%;
     border: solid;
     transition: transform .2s;
@@ -374,8 +374,6 @@ transform: scale(1.09);
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 5rem;
-    margin-right: 5rem;
     border-radius: 5%;
     border: solid;
     transition: transform .2s;
@@ -410,7 +408,7 @@ transform: scale(1.09);
     place-content: center;
 }
 
-.parrafo {
+.qs__div {
     grid-area: parrafo;
     display: flex;
 }
@@ -418,11 +416,12 @@ transform: scale(1.09);
 .tarjeta__nombre{
     border-bottom: solid;
     padding-top: 1rem;
-    color: #14213D
+    color: #14213D;
+    font-size: 1.5rem;
 }
 .tarjeta__parrafo{
     padding-top: 1rem;
-    color: #14213D
+    color: #14213D;
 }
 
 
@@ -432,33 +431,34 @@ transform: scale(1.09);
 
 /* GALERIA */
 
-.galeria__body{
+.galeria{
     background-color:#E5E5E5;
 }
 
-.galeria {
-    margin-left: 8rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.galeria__img{
+    margin-left: 25%;
 }
 
-
-.galeria__imagen{
-    width: 60vh;
+.galeria__encabezado {
+    height: 25vh ;
+    background: url(../../img/tires-g4239f20c9_192007.jpg)center;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
 }
 
-.galeria__video {
-    margin-top: 3rem;
-    margin-left: 19rem;
-    margin-bottom: 3rem;
-}
 
 /* FIN DE GALERIA */
 
 
-/*MEDIA QUERIES 768px*/
+/*MEDIA QUERIES 968px*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
 
     /*INICIO*/
 
@@ -489,16 +489,16 @@ transform: scale(1.09);
     padding: 4rem;
 }
 
-.footer{
+/*.footer{
     height: 15vh ;
-}
+}*/
 
 .footer__anchor{
     font-size: 1.1rem;
 }
 
     /*QUIENES SOMOS*/
-.qs__section{
+/*.qs__section{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 350px 265px 200px 250px 250px 1px;
         grid-template-areas: 
@@ -510,46 +510,36 @@ transform: scale(1.09);
         row-gap: 1rem;
         padding: 0rem;
     }
+    */
+
     .equipo{
         font-size: 1.5rem;
+    }
 
-    }
-    .tarjeta1{
-        margin-left: 6rem;
-        margin-right: 6rem;
-    }
-    .tarjeta2{
-        margin-left: 6rem;
-        margin-right: 6rem; 
-    }
-    .tarjeta3{
-        margin-left: 6rem;
-        margin-right: 6rem;
-    }
-    .tarjeta4{
-        margin-left: 6rem;
-        margin-right: 6rem;
-    }
 
     /*SERVICIOS*/
 
-    .servicio__img{
+    .servicio__img {
         font-size: 1.5rem;
-    }
-
-    .section {
-        
-        grid-template-columns: 1fr 1fr;
-        padding: 2rem;
-        gap: 2rem;
-        column-gap: 2rem;
-    }
 }
 
-/*MEDIA QUERIES 320px*/
 
-@media screen and (max-width: 320px) {
 
+/*CONTACTO*/
+
+/*GAALERIA*/
+.galeria__encabezado {
+    font-size: 1.5rem;
+    height: 20vh;   
+}
+
+}
+
+
+
+/*MEDIA QUERIES 575px*/
+
+@media screen and (max-width: 575px) {
     /*INICIO*/
 
     .header__logo {
@@ -571,43 +561,26 @@ transform: scale(1.09);
     }
 
     .footer{
-        height: 40vh;
+        height: 65vh;
         padding: 1rem;
         flex-direction: column;
 
     }
+    .footer__horarios{
+        font-size: 1rem;
+    }
+    .items__footer{
+        font-size: 1rem;
+
+    }
+
+    .header{
+        flex-direction: row;
+    }
+
 
     /*QuIENES SOMOS*/
 
-    .qs__section {
-        grid-template-columns: 1fr;
-        grid-template-rows: 214px 725px 120px 250px 250px 250px 250px 10px;
-        grid-template-areas: 
-                "imagen"
-                "parrafo"
-                "equipo"
-                "tarjeta1"
-                "tarjeta2"
-                "tarjeta3"
-                "tarjeta4";
-                padding: 0rem;
-    }
-    .tarjeta1 {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    .tarjeta2 {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    .tarjeta3 {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    .tarjeta4 {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
 
     /* SERVICIOS*/
 
@@ -624,6 +597,18 @@ transform: scale(1.09);
     }
     .agenda__btn{
         font-size: 1rem;
+    }
+
+    /*GALERIA*/
+
+    /*.galeria__carrusel{
+        max-width: 50%;
+    }
+    */
+
+    .galeria__img{
+        width: 100% !important;
+        margin-left: 0;
     }
 }
 

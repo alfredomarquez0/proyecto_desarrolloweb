@@ -1,0 +1,113 @@
+@media screen and (max-width: 968px) {
+/*INDEX*/
+.header{
+    flex-direction: column;
+
+    &__logo{
+    max-width: 14rem;
+    }
+
+    &__list{
+    font-size: 1rem;
+    padding: 1rem;
+    }
+}
+
+.hero__titulo{
+    font-size: 1.5rem;
+}
+.hero__slogan{
+    font-size: 1.3rem;
+}
+.btn{
+    font-size: 1.3rem;
+    padding: 0.3rem;
+}
+
+.info{
+    padding: 4rem;
+}
+
+.footer__anchor{
+    font-size: 1.1rem;
+}
+
+/*Quienes Somos*/
+.qs__equipo{
+        font-size: 1.5rem;
+    }
+
+/*Servicios*/
+.servicio__img {
+    font-size: 1.5rem;
+}
+
+/*Galeria*/
+.galeria__encabezado {
+    font-size: 1.5rem;
+    height: 20vh;   
+}
+
+}
+
+/*MEDIA QUERIES 575px*/
+
+@media screen and (max-width: 575px) {
+    /*INDEX*/
+    .header{
+        flex-direction: row;
+
+        &__logo {
+        max-width: 11rem;
+        }
+
+        &__list {
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+    .hero {
+        padding: 1rem;
+        height: 65vh;
+    }
+
+    .info {
+        padding: 2rem;
+    }
+
+    .footer{
+        height: 65vh;
+        padding: 1rem;
+        flex-direction: column;
+
+        &__horarios{
+        font-size: 1rem;
+        }
+    }
+
+
+    /* SERVICIOS*/
+    .servicio__img {
+        font-size: 1rem;
+    }
+
+    .servicio__img {
+        background: url(../../img/tires-g4239f20c9_192007.jpg) bottom;
+    }
+    .section {
+        grid-template-columns: 1fr;
+        
+    }
+    .agenda__btn{
+        font-size: 1rem;
+    }
+
+    /*GALERIA*/
+    .galeria__img{
+        width: 100% !important;
+        margin-left: 0;
+    }
+}
+
+

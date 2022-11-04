@@ -4,57 +4,78 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mecanica integral en Buenos Aires para todo tipo de autos y camionetas, entregamos presupuesto sin cargo ">
+        <meta name="keywords" content="Taller mecanico, tren delantero, embragues, filtros y correas, mecanica pesada, cambio de fluidos, cambio de aceite, llantas y cubiertas, diagnostico computarizado,inyeccion nafta y diesel">
         <title>Quienes Somos</title>
-        <link rel="shortcut icon" href="../img/AMC MOTORSPORT logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/logo-amcmotorsport.png" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ab5f4a11cc.js" crossorigin="anonymous"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-        <link rel="stylesheet" href="../estilos/css/styles.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="../estilos/css/styles.css">-->
+        <link rel="stylesheet" href="../estilos/css/translated.css">
     </head>
 <body class="qs__body">
     <header class="header">
-        <a href="../index.html"><img class="header__logo" src="../img/AMC MOTORSPORT.png" alt="logo empresa"></a>
-        <nav>
-            <ul class="header__list">
-                <li class="header__item"> <a class="header__anchor" href="../index.html">Inicio</a></li>
-                <li class="header__item"> <a class="header__anchor" href="#">Quienes somos</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./servicios.html">Servicios</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./galeria.html">Galeria</a></li>
-                <li class="header__item"> <a class="header__anchor" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <a href="../index.html"><img class="header__logo" src="../img/amc-motorsport.png" alt="logo empresa"></a>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="header__list navbar-nav">
+                        <li class="header__item"> <a class="header__anchor" href="../index.html">Inicio</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="#">Quienes somos</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./servicios.html">Servicios</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./galeria.html">Galeria</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <section class="qs__section">
-        <div class="imagen">
-            <img class="qs__img" src="../img/pexels-cottonbro-4480505.jpg" alt="Imagen de sobre nosotros">
-        </div>
-        <div class="parrafo">
-            <p class="qs__parrafo">Nuestro taller se crea en el año 2020, con el fin de darles a las personas un sitio seguro, confiable y responsable para dejar su vehículo. Contamos con mecánicos certificados, que todo el tiempo están en formación y búsqueda de poder ofrecer un excelente servicio, en el menor tiempo posible. Además, somos aliados de las mejores marcas en el mercado.
-            </p>
-        </div>
-        <span class="equipo" data-aos="zoom-in">Nuestro Equipo</span>
-        <div class="tarjeta1">
-            <img class="tarjeta__img" src="../img/favicon.png" alt="">
-            <h3 class="tarjeta__nombre">Alfredo Marquez</h3>
-            <p class="tarjeta__parrafo">Jefe area mecanica</p>
-        </div>
-        <div class="tarjeta2">
-            <img class="tarjeta__img" src="../img/favicon.png" alt="">
-            <h3 class="tarjeta__nombre">Alfredo Roman</h3>
-            <p class="tarjeta__parrafo">Encargado area de servicios</p>
-        </div>
-        <div class="tarjeta3">
-            <img class="tarjeta__img" src="../img/favicon.png" alt="">
-            <h3 class="tarjeta__nombre">Maria J Garcia</h3>
-            <p class="tarjeta__parrafo">Encargada area ecommerce</p>
-        </div>
-        <div class="tarjeta4">
-            <img class="tarjeta__img" src="../img/favicon.png" alt="">
-            <h3 class="tarjeta__nombre">Ethel Colmenares</h3>
-            <p class="tarjeta__parrafo">Encargada area administrativa</p>
+    <section class="qs container">
+        <div class="row gy-3 justify-content-around mt-3">
+            <div class="imagen col-xl-6 col-md-6 col-sm-12">
+                <img class="qs__img" src="../img/pexels-cottonbro-4480505.jpg" alt="Imagen de sobre nosotros">
+            </div>
+            <div class="qs__div col-xl-6 col-md-6 col-sm-12">
+                <p class="qs__parrafo">Nuestro taller se crea en el año 2020, con el fin de darles a las personas un sitio seguro, confiable y responsable para dejar su vehículo. Contamos con mecánicos certificados, que todo el tiempo están en formación y búsqueda de poder ofrecer un excelente servicio, en el menor tiempo posible. Además, somos aliados de las mejores marcas en el mercado.
+                </p>
+            </div>
+            <span class="qs__equipo col-lg-12" data-aos="zoom-in">Nuestro Equipo</span>
+            <div class="card tarjeta mt-3 mb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/logo-amcmotorsport.png" class="card-img-top tarjeta__presentacion" alt="...">
+                <div class="card-body">
+                    <h3 class="tarjeta__nombre1">Alfredo Marquez</h3>
+                    <p class="card-text tarjeta__parrafo">Jefe area mecánica</p>
+                </div>
+            </div>
+            <div class="card tarjeta mt-3 mb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/logo-amcmotorsport.png" class="card-img-top tarjeta__presentacion" alt="...">
+                <div class="card-body">
+                    <h3 class="tarjeta__nombre2">Alfredo Roman</h3>
+                    <p class="card-text tarjeta__parrafo">Encargado area servicios</p>
+                </div>
+            </div>
+            <div class="card tarjeta mt-3 mb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/logo-amcmotorsport.png" class="card-img-top tarjeta__presentacion" alt="...">
+                <div class="card-body">
+                    <h3 class="tarjeta__nombre3">Maria J Garcia</h3>
+                    <p class="card-text tarjeta__parrafo">Encargada area E-commerce</p>
+                </div>
+            </div>
+            <div class="card tarjeta mt-3 mb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <img src="../img/logo-amcmotorsport.png" class="card-img-top tarjeta__presentacion" alt="...">
+                <div class="card-body">
+                    <h3 class="tarjeta__nombre4">Ethel Colmenares</h3>
+                    <p class="card-text tarjeta__parrafo">Encargada area administrativa</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer">
@@ -64,7 +85,7 @@
         </nav>
         <div class="footer__horarios">
             <h4 class="footer__info">Horarios</h4>
-            <p class="footer__info">Lunes a Viernes: <br> 8:00-17:00</p>
+            <p class="footer__info">Lunes a Viernes: 8:00-17:00</p>
         </div>
         <div class="itemsFooter">
             <h4 class="footer__info">Dirección</h4>
@@ -83,6 +104,8 @@
     <div class="copy">
         <p class="copy__nombre">© Alfredo Marquez - 2022 </p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script>
         AOS.init();
     </script>
