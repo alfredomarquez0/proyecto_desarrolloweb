@@ -20,18 +20,18 @@
 </head>
 <body>
     <header class="header">
-        <a href="#"><img class="header__logo" src="./img/amc-motorsport.png" alt="logo empresa"></a>
         <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid">
+            <div class="container-fluid header__container">
+                <a href="#"><img class="header__logo navbar-brand" src="./img/amc-motorsport.png" alt="logo empresa"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="menu">
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="menu">
                     <ul class="header__list navbar-nav">
                         <li class="header__item"> <a class="header__anchor" href="#">Inicio</a></li>
                         <li class="header__item"> <a class="header__anchor" href="./vistas/quienes_somos.html">Quienes somos</a></li>
                         <li class="header__item"> <a class="header__anchor" href="./vistas/servicios.html">Servicios</a></li>
-                        <li class="header__item"> <a class="header__anchor" href="./vistas/galeria.html">Galeria</a></li>
+                        <li class="header__item"> <a class="header__anchor" href="./vistas/galeria.html">Galería</a></li>
                         <li class="header__item"> <a class="header__anchor" href="./vistas/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
@@ -48,12 +48,136 @@
             </div>
 
         </section>
-        <section class="info">
+        <section class="info pl-3 pr-3">
                 <h2>El taller</h2>
                 <p>Somos un Taller Mecánico–Automotriz que se encarga del cuidado y el buen funcionamiento de tu vehículo. Contamos con mecánicos especializados que se ocuparan del diagnostico, la reparación, o sustitución en el sistema mecánico de tu vehículo. Nos diferencia el profesionalismo que le otorgamos a cada auto, el respeto y honestidad con la que tratamos a nuestros clientes, la puntualidad en las entregas y su garantía. Somos el taller de Mecánica general y especializada que necesitas.
                 </p>
         </section>
     </main>
+    <section class="">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+              <div class="card">
+                <div class="card-body py-5">
+      
+                  <!-- Carousel wrapper -->
+                  <div id="carouselDarkVariant" class="carousel slide carousel-dark" data-bs-ride="true">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators mb-0">
+                      <button type="button" data-bs-target="#carouselDarkVariant" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselDarkVariant" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselDarkVariant" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+      
+                    <!-- Inner -->
+                    <div class="carousel-inner pt-2 pb-5">
+                      <!-- Single item -->
+                      <div class="carousel-item active">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-8 col-lg-9 col-xl-8">
+                            <div class="d-flex">
+                              <div class="flex-shrink-0">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                                  class="rounded-circle mb-4 mb-lg-0 shadow-2 opinion" alt="clienta Analia" width="90"
+                                  height="90">
+                              </div>
+                              <div class="flex-grow-1 ms-4 ps-3">
+                                <figure>
+                                  <blockquote class="blockquote mb-4">
+                                    <p>
+                                      <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                                      <span class="font-italic">Es un excelente taller con gente honesta que no te quieren sacar tres ojos de la cara, de verdad que los recomiendo por completo fuí por un ruidito que hacía ñiiiiqui ñiiiiqui y me solucionaron en el mismo día, ¡me fuí feliz del sitio!</span>
+                                    </p>
+                                  </blockquote>
+                                  <figcaption class="blockquote-footer">
+                                    Analia Serafini <cite title="Source Title">Toyota Corolla</cite>
+                                  </figcaption>
+                                </figure>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- Single item -->
+                      <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-8 col-lg-9 col-xl-8">
+                            <div class="d-flex">
+                              <div class="flex-shrink-0">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                  class="rounded-circle mb-4 mb-lg-0 shadow-2 opinion" alt="clienta Cami" width="90"
+                                  height="90">
+                              </div>
+                              <div class="flex-grow-1 ms-4 ps-3">
+                                <figure>
+                                  <blockquote class="blockquote mb-4">
+                                    <p>
+                                      <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                                      <span class="font-italic">Después de sufrir con talleres poco honestos, me encontré con AMC Motorsport, le hicieron un diagnóstico a mi auto y a la hora ya me estaban entregando el auto, la verdad que destacan en honestidad y buen trabajo. </span>
+                                    </p>
+                                  </blockquote>
+                                  <figcaption class="blockquote-footer">
+                                    Cami Lanuzzi <cite title="Source Title">Peugeot 308</cite>
+                                  </figcaption>
+                                </figure>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <!-- Single item -->
+                      <div class="carousel-item">
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-md-8 col-lg-9 col-xl-8">
+                            <div class="d-flex">
+                              <div class="flex-shrink-0">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                                  class="rounded-circle mb-4 mb-lg-0 shadow-2 opinion" alt="cliente Jose" width="90"
+                                  height="90">
+                              </div>
+                              <div class="flex-grow-1 ms-4 ps-3">
+                                <figure>
+                                  <blockquote class="blockquote mb-4">
+                                    <p>
+                                      <i class="fas fa-quote-left fa-lg text-warning me-2"></i>
+                                      <span class="font-italic">Mi camioneta tenía una falla que en todos lados me decían que debía cambiar medio motor, llegue a AMC Motorsport donde me contaron la posta de lo que ocurría, al final en dos días ya estaba lista, satisfecho del servicio recibido.</span>
+                                    </p>
+                                  </blockquote>
+                                  <figcaption class="blockquote-footer">
+                                    Jose Amador <cite title="Source Title">Dodge Ram </cite>
+                                  </figcaption>
+                                </figure>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Inner -->
+      
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDarkVariant"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDarkVariant"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <!-- Carousel wrapper -->
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <footer class="footer">
         <nav>
             <ul>
@@ -80,7 +204,7 @@
         </div>
     </footer>
     <div class="copy">
-        <p class="copy__nombre">© Alfredo Marquez - 2022 </p>
+        <p class="copy__nombre">© Alfredo Márquez - 2022 </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>

@@ -1,7 +1,6 @@
 @media screen and (max-width: 968px) {
 /*INDEX*/
 .header{
-    flex-direction: column;
 
     &__logo{
     max-width: 14rem;
@@ -10,6 +9,10 @@
     &__list{
     font-size: 1rem;
     padding: 1rem;
+    }
+
+    &__container{
+        flex-direction: column;
     }
 }
 
@@ -28,11 +31,19 @@
     padding: 4rem;
 }
 
-.footer__anchor{
+.footer{
+    font-size: 0.9rem;
+
+    &__anchor{
     font-size: 1.1rem;
+    }
 }
 
 /*Quienes Somos*/
+.imagen{
+    align-self: center;
+}
+
 .qs__equipo{
         font-size: 1.5rem;
     }
@@ -55,8 +66,7 @@
 @media screen and (max-width: 575px) {
     /*INDEX*/
     .header{
-        flex-direction: row;
-
+    
         &__logo {
         max-width: 11rem;
         }
@@ -64,6 +74,10 @@
         &__list {
         flex-direction: column;
         align-items: center;
+        }
+
+        &__container{
+            flex-direction: row;
         }
     }
 
@@ -76,13 +90,22 @@
         padding: 2rem;
     }
 
+    .opinion{
+        display: none;
+    }
+
+    .ms-4{
+        margin-right: 1.5rem;
+    }
+
     .footer{
-        height: 65vh;
+        height: auto;
         padding: 1rem;
         flex-direction: column;
+        font-size: 0.9rem;
 
         &__horarios{
-        font-size: 1rem;
+        font-size: 0.9rem;
         }
     }
 
